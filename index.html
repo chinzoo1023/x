@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Draw app</title>
+		<style>
+			.nav{
+				width:550px;
+				height:50px;
+				background-color:#e1e1e1;
+				position:fixed;
+				top:10px;
+				left:50%;
+				transform:translateX(-50%);
+				display:flex;
+				align-items:center;
+				justify-content:center;
+			}
+			.clr{
+				width:30px;
+				height:30px;
+				border-radius:50%;
+				background-color:#e1e1e1;
+				margin-left:6px;
+				border:3px solid green;
+				cursor:pointer;
+			}
+			.clr:nth-child(1){
+				background-color:blue;
+			}
+			.clr:nth-child(2){
+				background-color:green;
+			}
+			.clr:nth-child(3){
+				background-color:purple;
+			}
+			.clr:nth-child(4){
+				background-color:yellow;
+			}
+			.clr:nth-child(5){
+				background-color:red;
+			}
+			.clr:nth-child(6){
+				background-color:pink;
+			}
+			.clr:nth-child(7){
+				background-color:brown;
+			}
+			.clr:nth-child(8){
+				background-color:black;
+			}
+			.clr:nth-child(9){
+				background-color:aqua;
+			}
+			.clr:nth-child(10){
+				background-color:orange;
+			}
+		</style>	
+	</head>
+	<body>
+		<canvas id="canvas"></canvas>
+		<div class="nav">
+			<div class="clr" data-clr="blue"></div>
+			<div class="clr" data-clr="green"></div>
+			<div class="clr" data-clr="purple"></div>
+			<div class="clr" data-clr="yellow"></div>
+			<div class="clr" data-clr="red"></div>
+			<div class="clr" data-clr="pink"></div>
+			<div class="clr" data-clr="brown"></div>
+			<div class="clr" data-clr="black"></div>
+			<div class="clr" data-clr="aqua"></div>
+			<div class="clr" data-clr="orange"></div>
+			<select class="selector">
+				<option value="">Select line's size</option>
+				<option value="5">5</option>
+				<option value="10">10</option>
+				<option value="15">15</option>
+				<option value="20">20</option>
+				<option value="25">25</option>
+				<option value="30">30</option>
+				<option value="35">35</option>
+				<option value="40">45</option>
+				<option value="50">50</option>
+			</select>
+			<input type="color">
+			<button class="select">select</button>
+			<button class="clear">clear</button>
+			<button class="save">save</button>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
